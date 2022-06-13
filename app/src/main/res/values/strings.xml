@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">falaseries</string>
+    <string name="email">Email</string>
+    <string name="password">Senha</string>
+    <string name="confirm_button">Enter</string>
+    <string name="confirm_button_2">Ok!</string>
+    <string name="register_account">Não possui cadastro? Inscreva-se aqui</string>
+    <string name="confirm_register">Série cadastrada!</string>
+    <string name="confirm_register_text">Cadastre mais séries para o seu repertório completo na palma da sua mão!</string>
+    <string name="search_text">Pesquisar</string>
+
+</resources>

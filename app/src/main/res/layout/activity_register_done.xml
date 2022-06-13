@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/gradient"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".control.RegisterDone">
+
+    <ImageView
+        android:id="@+id/logo_solo"
+        android:layout_width="67.98dp"
+        android:layout_height="67.98dp"
+        android:layout_marginTop="164dp"
+        android:orientation="vertical"
+        android:src="@drawable/logo_solo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.519"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></ImageView>
+
+    <TextView
+        android:id="@+id/Text_Cadastro"
+        android:layout_width="191dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30.02dp"
+        android:text="@string/confirm_register"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/logo_solo"
+        app:layout_constraintStart_toStartOf="@id/logo_solo"
+        app:layout_constraintTop_toBottomOf="@id/logo_solo" />
+
+    <TextView
+        android:layout_width="289dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:text="@string/confirm_register_text"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@id/Text_Cadastro"
+        app:layout_constraintStart_toStartOf="@id/Text_Cadastro"
+        app:layout_constraintTop_toBottomOf="@id/Text_Cadastro" />
+
+    <Button
+        android:id="@+id/ok"
+       style="@style/Edit_button_1"
+        android:layout_width="277dp"
+        android:layout_height="49dp"
+        android:layout_gravity="start"
+        android:layout_marginTop="99dp"
+        android:enabled="true"
+        android:text="@string/confirm_button_2"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@id/Text_Cadastro"
+        app:layout_constraintStart_toStartOf="@id/Text_Cadastro"
+        app:layout_constraintTop_toBottomOf="@id/Text_Cadastro" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

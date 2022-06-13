@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Registration"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient"
+    android:visibility="visible"
+    tools:context=".control.Registration"
+    tools:visibility="visible">
+
+    <ImageButton
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20.64dp"
+        android:layout_marginTop="23dp"
+        android:background="@color/transparent"
+        android:src="@drawable/back_1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Text_Cadastro"
+        android:layout_width="215dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="111dp"
+        android:text="Cadastro de série"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="22.96dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.519"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="263dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:text="Adiciona todas as informações necessárias para cadastrar essa serie."
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@id/Text_Cadastro"
+        app:layout_constraintStart_toStartOf="@id/Text_Cadastro"
+        app:layout_constraintTop_toBottomOf="@id/Text_Cadastro" />
+
+    <View
+        android:id="@+id/add"
+        style="@style/Edit_button"
+        android:layout_width="303dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="89dp"
+        app:layout_constraintEnd_toEndOf="@id/Text_Cadastro"
+        app:layout_constraintStart_toStartOf="@id/Text_Cadastro"
+        app:layout_constraintTop_toBottomOf="@id/Text_Cadastro" />
+
+    <TextView
+        android:id="@+id/Add_image"
+        android:layout_width="187dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="Clique para adicionar imagem"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        app:layout_constraintEnd_toEndOf="@id/Text_Cadastro"
+        app:layout_constraintStart_toStartOf="@id/Text_Cadastro"
+        app:layout_constraintTop_toBottomOf="@id/Text_Cadastro"
+        />
+    
+    <ImageView
+        android:id="@+id/cam"
+        android:src="@drawable/cam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="12.98dp"
+        android:layout_marginTop="100dp"
+        app:layout_constraintRight_toLeftOf="@id/Add_image"
+        app:layout_constraintTop_toBottomOf="@id/Text_Cadastro"
+        />
+
+    <TextView
+        android:layout_width="89dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:layout_marginLeft="10dp"
+        android:text="Título da série:"
+        android:textSize="10.7dp"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/add"
+        app:layout_constraintStart_toStartOf="@id/add"
+        />
+
+    <EditText
+        android:id="@+id/Edit_text"
+        android:background="@drawable/edit_text"
+        android:layout_width="303dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="168dp"
+        android:textColor="@color/text_color"
+        android:textSize="12dp"
+        app:layout_constraintEnd_toEndOf="@id/Text_Cadastro"
+        app:layout_constraintStart_toStartOf="@id/Text_Cadastro"
+        app:layout_constraintTop_toBottomOf="@id/Text_Cadastro"
+        />
+
+    <TextView
+        android:layout_width="89dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:layout_marginLeft="10dp"
+        android:text="Sinopse:"
+        android:textSize="10.7dp"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/add"
+        app:layout_constraintStart_toStartOf="@id/add"
+        />
+
+    <EditText
+        android:id="@+id/Edit_text_2"
+        android:background="@drawable/edit_text"
+        android:layout_width="303dp"
+        android:layout_height="146dp"
+        android:layout_marginTop="239dp"
+        android:textColor="@color/text_color"
+        android:textSize="12dp"
+        app:layout_constraintEnd_toEndOf="@id/Text_Cadastro"
+        app:layout_constraintStart_toStartOf="@id/Text_Cadastro"
+        app:layout_constraintTop_toBottomOf="@id/Text_Cadastro"
+        />
+
+    <View
+        android:id="@+id/cancel_button"
+        style="@style/Edit_button"
+        android:layout_width="146dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="406dp"
+        app:layout_constraintStart_toStartOf="@id/add"
+        app:layout_constraintTop_toBottomOf="@id/Text_Cadastro"
+        />
+
+    <TextView
+        android:id="@+id/cancel_button_1"
+        android:layout_width="57dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="423dp"
+        android:layout_marginLeft="45dp"
+        android:text="Cancelar"
+        android:textAlignment="center"
+        android:textSize="12.5dp"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@id/add"
+        app:layout_constraintTop_toBottomOf="@id/Text_Cadastro"
+        />
+
+    <Button
+        android:id="@+id/serieNova"
+        android:layout_width="134dp"
+        style="@style/Edit_button_1"
+        android:layout_height="49dp"
+        android:layout_gravity="start"
+        android:layout_marginTop="406dp"
+        android:enabled="true"
+        android:text="Cadastrar"
+        android:textSize="12.5dp"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@id/add"
+        app:layout_constraintTop_toBottomOf="@id/Text_Cadastro"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

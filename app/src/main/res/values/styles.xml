@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Edit_button">
+        <item name="android:background">@drawable/edit_button</item>
+    </style>
+
+    <style name="Edit_button_1">
+        <item name="android:background">@drawable/edit_button_1</item>
+    </style>
+
+    <style name="Edit_text">
+        <item name="background">@drawable/edit_text</item>
+    </style>
+</resources>

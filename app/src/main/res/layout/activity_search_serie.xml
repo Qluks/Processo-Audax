@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient"
+    tools:context=".control.SearchSerie">
+
+    <ImageButton
+        android:id="@+id/back_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:layout_marginLeft="20.64dp"
+        android:background="@color/transparent"
+        android:src="@drawable/back_1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/Text_Pesquisa"
+        android:layout_width="215dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="111dp"
+        android:text="@string/search_text"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.519"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <SearchView
+        android:id="@+id/Search_EditText"
+        android:background="@drawable/edit_text"
+        android:layout_width="303dp"
+        android:layout_height="45.54dp"
+        android:layout_marginTop="16dp"
+        android:searchIcon="@drawable/ic_search"
+        android:textColor="@color/text_color"
+        android:textSize="12dp"
+        app:layout_constraintEnd_toEndOf="@id/Text_Pesquisa"
+        app:layout_constraintStart_toStartOf="@id/Text_Pesquisa"
+        app:layout_constraintTop_toBottomOf="@id/Text_Pesquisa"
+        />
+
+    <ImageButton
+        android:id="@+id/image_1"
+        android:src="@drawable/image_1"
+        android:layout_width="91.11dp"
+        android:layout_height="136.66dp"
+        android:layout_marginTop="40.46dp"
+        app:layout_constraintTop_toBottomOf="@id/Search_EditText"
+        app:layout_constraintStart_toStartOf="@id/Search_EditText"
+        />
+
+    <ImageButton
+        android:id="@+id/image_2"
+        android:src="@drawable/image_2"
+        android:layout_width="91.11dp"
+        android:layout_height="136.66dp"
+        android:layout_marginTop="40.46dp"
+        android:layout_marginLeft="13.39dp"
+        app:layout_constraintLeft_toRightOf="@id/image_1"
+        app:layout_constraintTop_toBottomOf="@id/Search_EditText"
+        />
+
+    <ImageButton
+        android:id="@+id/image_3"
+        android:src="@drawable/image3"
+        android:layout_width="91.11dp"
+        android:layout_height="136.66dp"
+        android:layout_marginTop="40.46dp"
+        android:layout_marginLeft="13.39dp"
+        app:layout_constraintLeft_toRightOf="@id/image_2"
+        app:layout_constraintTop_toBottomOf="@id/Search_EditText"
+        />
+
+    <ImageButton
+        android:id="@+id/image_4"
+        android:src="@drawable/image_4"
+        android:layout_width="91.11dp"
+        android:layout_height="136.66dp"
+        android:layout_marginTop="16.36dp"
+        app:layout_constraintStart_toStartOf="@id/Search_EditText"
+        app:layout_constraintTop_toBottomOf="@id/image_1"
+        />
+
+    <ImageButton
+        android:id="@+id/image_5"
+        android:src="@drawable/image5"
+        android:layout_width="91.11dp"
+        android:layout_height="136.66dp"
+        android:layout_marginTop="16.36dp"
+        android:layout_marginLeft="13.39dp"
+        app:layout_constraintLeft_toRightOf="@id/image_4"
+        app:layout_constraintTop_toBottomOf="@id/image_1"
+        />
+
+    <ImageButton
+        android:id="@+id/image_6"
+        android:src="@drawable/image_6"
+        android:layout_width="91.11dp"
+        android:layout_height="136.66dp"
+        android:layout_marginTop="16.36dp"
+        android:layout_marginLeft="13.39dp"
+        app:layout_constraintLeft_toRightOf="@id/image_5"
+        app:layout_constraintTop_toBottomOf="@id/image_1"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
